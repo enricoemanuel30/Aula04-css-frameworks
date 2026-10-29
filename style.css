@@ -1,0 +1,187 @@
+/* Reset padrão */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0b0f19;
+    color: #e2e8f0;
+    padding: 30px 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 2.2rem;
+    color: #38bdf8;
+    letter-spacing: 0.5px;
+}
+
+.header p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    margin-top: 5px;
+}
+
+/* =========================================================
+   PROPRIEDADES DE FLEXBOX (1 até 9) - Container Principal
+   ========================================================= */
+.container-flex {
+    /* 1 */
+    display: flex;
+    /* 2 */
+    flex-direction: row;
+    /* 3 */
+    flex-wrap: wrap;
+    /* 4 */
+    justify-content: center;
+    /* 5 */
+    align-items: stretch;
+    /* 6 */
+    align-content: flex-start;
+    /* 7 */
+    gap: 20px;
+    /* 8 */
+    row-gap: 20px;
+    /* 9 */
+    column-gap: 20px;
+
+    background-color: #161e2e;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid #1f293d;
+    max-width: 1300px;
+    margin: 0 auto;
+    min-height: 80vh;
+}
+
+/* =========================================================
+   PROPRIEDADES DO BOX MODEL & FLEXBOX NOS ITENS (10 até 16)
+   ========================================================= */
+.card {
+    /* --- Box Model --- */
+    /* Content (Dimensões e Fundo) */
+    width: 240px;
+    min-height: 120px;
+    background-color: #1e293b;
+    color: #f8fafc;
+
+    /* Padding (Espaçamento Interno) */
+    padding: 18px;
+
+    /* Border (Borda Externa) */
+    border: 1px solid #334155;
+    border-left: 5px solid #64748b;
+    border-radius: 10px;
+
+    /* Margin (Espaçamento Externo) */
+    margin: 0px;
+
+    /* --- Flexbox nos Itens (Interno) --- */
+    /* 10 */
+    display: flex;
+    /* 11 */
+    flex-direction: column;
+    /* 12 */
+    justify-content: space-between;
+    /* 13 */
+    align-items: stretch;
+    /* 14 */
+    flex-grow: 1;
+    /* 15 */
+    flex-shrink: 1;
+    /* 16 */
+    flex-basis: 240px;
+
+    transition: all 0.25s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5);
+}
+
+/* Flexbox nos elementos internos dos cards */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.card-header .title {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.card-header .badge {
+    font-size: 0.7rem;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.card-body p {
+    font-size: 0.82rem;
+    color: #94a3b8;
+    line-height: 1.5;
+}
+
+/* Status das Bordas e Badges */
+.card.online {
+    border-left-color: #10b981;
+}
+
+.card.online .badge {
+    background-color: rgba(16, 185, 129, 0.15);
+    color: #34d399;
+}
+
+.card.warning {
+    border-left-color: #f59e0b;
+}
+
+.card.warning .badge {
+    background-color: rgba(245, 158, 11, 0.15);
+    color: #fbbf24;
+}
+
+.card.critical {
+    border-left-color: #ef4444;
+}
+
+.card.critical .badge {
+    background-color: rgba(239, 68, 68, 0.15);
+    color: #f87171;
+}
+
+/* =========================================================
+   PROPRIEDADES DE FLEXBOX INDIVIDUAIS (17 até 20)
+   ========================================================= */
+.card-1 {
+    /* 17 */
+    order: 1;
+}
+
+.card-2 {
+    /* 18 */
+    align-self: auto;
+}
+
+.card-5 {
+    /* 19 */
+    order: -1;
+}
+
+/* Traz o card crítico para o início */
+.card-20 {
+    /* 20 */
+    align-self: auto;
+}

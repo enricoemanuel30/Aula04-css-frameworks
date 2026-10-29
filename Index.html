@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 01 - Dashboard de Infraestrutura TI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>System Status & Infrastructure Monitor</h1>
+        <p>Painel de Monitoramento de Servidores e Serviços</p>
+    </header>
+
+    <!-- Container principal manipulado por Flexbox -->
+    <main class="container-flex">
+
+        <!-- 20 Elementos em formato de Cards de Métricas e Serviços -->
+        <div class="card card-1 online">
+            <div class="card-header">
+                <span class="title">Web Server 01</span>
+                <span class="badge">Online</span>
+            </div>
+            <div class="card-body">
+                <p>CPU: 24%</p>
+                <p>RAM: 4.2 GB / 16 GB</p>
+            </div>
+        </div>
+
+        <div class="card card-2 online">
+            <div class="card-header">
+                <span class="title">Web Server 02</span>
+                <span class="badge">Online</span>
+            </div>
+            <div class="card-body">
+                <p>CPU: 38%</p>
+                <p>RAM: 6.1 GB / 16 GB</p>
+            </div>
+        </div>
+
+        <div class="card card-3 warning">
+            <div class="card-header">
+                <span class="title">Database Main</span>
+                <span class="badge">Warning</span>
+            </div>
+            <div class="card-body">
+                <p>CPU: 87%</p>
+                <p>RAM: 28.5 GB / 32 GB</p>
+            </div>
+        </div>
+
+        <div class="card card-4 online">
+            <div class="card-header">
+                <span class="title">DB Replica 01</span>
+                <span class="badge">Online</span>
+            </div>
+            <div class="card-body">
+                <p>CPU: 12%</p>
+                <p>RAM: 8.0 GB / 32 GB</p>
+            </div>
+        </div>
+
+        <div class="card card-5 critical">
+            <div class="card-header">
+                <span class="title">Auth Service</span>
+                <span class="badge">Critical</span>
+            </div>
+            <div class="card-body">
+                <p>CPU: 99%</p>
+                <p>Uptime: 94.2%</p>
+            </div>
+        </div>
+
+        <div class="card card-6 online">
+            <div class="card-header">
+                <span class="title">API Gateway</span>
+                <span class="badge">Online</span>
+            </div>
+            <div class="card-body">
+                <p>Req/s: 1,420</p>
+                <p>Latency: 18ms</p>
+            </div>
+        </div>
+
+        <div class="card card-7 online">
+            <div class="card-header">
+                <span class="title">Cache Redis</span>
+                <span class="badge">Online</span>
+            </div>
+            <div class="card-body">
+                <p>Hit Rate: 96.4%</p>
+                <p>RAM: 2.1 GB / 8 GB</p>
+            </div>
+        </div>
+
+        <div class="card card-8 online">
+            <div class="card-header">
+                <span class="title">Storage S3 Proxy</span>
+                <span class="badge">Online</span>
+            </div>
+            <div class="card-body">
+                <p>Bandwidth: 45 MB/s</p>
+                <p>I/O: Normal</p>
+            </div>
+        </div>
+
+        <div class="card card-9 online">
+            <div class="card-header">
+                <span class="title">RabbitMQ Cluster</span>
+                <span class="badge">Online</span>
+            </div>
+            <div class="card-body">
+                <p>Queued: 142 msgs</p>
+                <p>Nodes: 3/3</p>
+            </div>
+        </div>
+
+        <div class="card card-10 warning">
+            <div class="card-header">
+                <span class="title">Elasticsearch</span>
+                <span class="badge">Warning</span>
+            </div>
+            <div class="card-body">
+                <p>Heap: 82%</p>
+                <p>Status: Yellow</p>
+            </div>
+        </div>
+
+        <div class="card card-11 online">
+            <div class="card-header">
+                <span class="title">Docker Swarm Manager</span>
+                <span class="badge">Online</span>
+            </div>
+            <div class="card-body">
+                <p>Active Tasks: 48</p>
+                <p>Nodes: 6 Active</p>
+            </div>
+        </div>
+
+        <div class="card card-12 online">
+            <div class="card-header">
+                <span class="title">DNS Resolver Primary</span>
+                <span class="badge">Online</span>
+            </div>
+            <div class="card-body">
+                <p>Queries: 12.4k/m</p>
+                <p>Health: 100%</p>
+            </div>
+        </div>
+
+        <div class="card card-13 online">
+            <div class="card-header">
+                <span class="title">Nginx Load Balancer</span>
+                <span class="badge">Online</span>
+            </div>
+            <div class="card-body">
+                <p>Active Conn: 3,210</p>
+                <p>SSL Cert: Valid (82d)</p>
+            </div>
+        </div>
+
+        <div class="card card-14 online">
+            <div class="card-header">
+                <span class="title">Backup Job Nightly</span>
+                <span class="badge">Online</span>
+            </div>
+            <div class="card-body">
+                <p>Last Sync: 03:00 AM</p>
+                <p>Status: Completed</p>
+            </div>
+        </div>
+
+        <div class="card card-15 online">
+            <div class="card-header">
+                <span class="title">Firewall Rules Engine</span>
+                <span class="badge">Online</span>
+            </div>
+            <div class="card-body">
+                <p>Blocked/h: 1,840</p>
+                <p>Rules: 256 Active</p>
+            </div>
+        </div>
+
+        <div class="card card-16 online">
+            <div class="card-header">
+                <span class="title">CI/CD Runner 01</span>
+                <span class="badge">Online</span>
+            </div>
+            <div class="card-body">
+                <p>Jobs Queue: 2</p>
+                <p>Status: Running</p>
+            </div>
+        </div>
+
+        <div class="card card-17 warning">
+            <div class="card-header">
+                <span class="title">CI/CD Runner 02</span>
+                <span class="badge">Warning</span>
+            </div>
+            <div class="card-body">
+                <p>Disk Usage: 89%</p>
+                <p>Status: Idle</p>
+            </div>
+        </div>
+
+        <div class="card card-18 online">
+            <div class="card-header">
+                <span class="title">Grafana Analytics</span>
+                <span class="badge">Online</span>
+            </div>
+            <div class="card-body">
+                <p>Dashboards: 14</p>
+                <p>Active Alerts: 3</p>
+            </div>
+        </div>
+
+        <div class="card card-19 online">
+            <div class="card-header">
+                <span class="title">Prometheus Collector</span>
+                <span class="badge">Online</span>
+            </div>
+            <div class="card-body">
+                <p>Targets: 42/42</p>
+                <p>Scrape: 15s</p>
+            </div>
+        </div>
+
+        <div class="card card-20 critical">
+            <div class="card-header">
+                <span class="title">SMTP Mail Relay</span>
+                <span class="badge">Critical</span>
+            </div>
+            <div class="card-body">
+                <p>Queue: 1,200 (Stuck)</p>
+                <p>Error: Connection Timeout</p>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>
